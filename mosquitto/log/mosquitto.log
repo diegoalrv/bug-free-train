@@ -1,0 +1,59 @@
+1703040437: mosquitto version 2.0.18 starting
+1703040437: Config loaded from /mosquitto/config/mosquitto.conf.
+1703040437: Opening ipv4 listen socket on port 1883.
+1703040437: Opening ipv6 listen socket on port 1883.
+1703040437: Opening websockets listen socket on port 9001.
+1703040437: mosquitto version 2.0.18 running
+1703040438: New client connected from ::ffff:192.168.48.1:35614 as mqttjs_ca51a36f (p2, c1, k60).
+1703040438: No will message specified.
+1703040438: Sending CONNACK to mqttjs_ca51a36f (0, 0)
+1703040438: Received SUBSCRIBE from mqttjs_ca51a36f
+1703040438: 	proyectores (QoS 0)
+1703040438: mqttjs_ca51a36f 0 proyectores
+1703040438: Sending SUBACK to mqttjs_ca51a36f
+1703040438: New client connected from ::ffff:192.168.48.1:35618 as mqttjs_4620a7e8 (p2, c1, k60).
+1703040438: No will message specified.
+1703040438: Sending CONNACK to mqttjs_4620a7e8 (0, 0)
+1703040438: Received SUBSCRIBE from mqttjs_4620a7e8
+1703040438: 	proyectores (QoS 0)
+1703040438: mqttjs_4620a7e8 0 proyectores
+1703040438: Sending SUBACK to mqttjs_4620a7e8
+1703040498: Received PINGREQ from mqttjs_ca51a36f
+1703040498: Sending PINGRESP to mqttjs_ca51a36f
+1703040498: Received PINGREQ from mqttjs_4620a7e8
+1703040498: Sending PINGRESP to mqttjs_4620a7e8
+1703040510: New connection from 192.168.48.3:57641 on port 1883.
+1703040510: New client connected from 192.168.48.3:57641 as auto-1BE9BFC5-AB49-874F-03E1-11DA8626F4CE (p2, c1, k60).
+1703040510: No will message specified.
+1703040510: Sending CONNACK to auto-1BE9BFC5-AB49-874F-03E1-11DA8626F4CE (0, 0)
+1703040510: Received PUBLISH from auto-1BE9BFC5-AB49-874F-03E1-11DA8626F4CE (d0, q0, r0, m0, 'proyectores', ... (65 bytes))
+1703040510: Sending PUBLISH to mqttjs_ca51a36f (d0, q0, r0, m0, 'proyectores', ... (65 bytes))
+1703040510: Sending PUBLISH to mqttjs_4620a7e8 (d0, q0, r0, m0, 'proyectores', ... (65 bytes))
+1703040510: Received DISCONNECT from auto-1BE9BFC5-AB49-874F-03E1-11DA8626F4CE
+1703040510: Client auto-1BE9BFC5-AB49-874F-03E1-11DA8626F4CE disconnected.
+1703040558: Received PINGREQ from mqttjs_ca51a36f
+1703040558: Sending PINGRESP to mqttjs_ca51a36f
+1703040558: Received PINGREQ from mqttjs_4620a7e8
+1703040558: Sending PINGRESP to mqttjs_4620a7e8
+1703040618: Received PINGREQ from mqttjs_ca51a36f
+1703040618: Sending PINGRESP to mqttjs_ca51a36f
+1703040618: Received PINGREQ from mqttjs_4620a7e8
+1703040618: Sending PINGRESP to mqttjs_4620a7e8
+1703040678: Received PINGREQ from mqttjs_ca51a36f
+1703040678: Sending PINGRESP to mqttjs_ca51a36f
+1703040678: Received PINGREQ from mqttjs_4620a7e8
+1703040678: Sending PINGRESP to mqttjs_4620a7e8
+1703040708: New connection from 192.168.48.3:35473 on port 1883.
+1703040708: New client connected from 192.168.48.3:35473 as auto-BDE8E63C-E4C7-9175-89E7-53B2E3B4A00E (p2, c1, k60).
+1703040708: No will message specified.
+1703040708: Sending CONNACK to auto-BDE8E63C-E4C7-9175-89E7-53B2E3B4A00E (0, 0)
+1703040708: Received PUBLISH from auto-BDE8E63C-E4C7-9175-89E7-53B2E3B4A00E (d0, q0, r0, m0, 'proyectores', ... (100 bytes))
+1703040708: Sending PUBLISH to mqttjs_ca51a36f (d0, q0, r0, m0, 'proyectores', ... (100 bytes))
+1703040708: Sending PUBLISH to mqttjs_4620a7e8 (d0, q0, r0, m0, 'proyectores', ... (100 bytes))
+1703040708: Received DISCONNECT from auto-BDE8E63C-E4C7-9175-89E7-53B2E3B4A00E
+1703040708: Client auto-BDE8E63C-E4C7-9175-89E7-53B2E3B4A00E disconnected.
+1703040725: Client mqttjs_ca51a36f closed its connection.
+1703040738: Received PINGREQ from mqttjs_4620a7e8
+1703040738: Sending PINGRESP to mqttjs_4620a7e8
+1703040798: Received PINGREQ from mqttjs_4620a7e8
+1703040798: Sending PINGRESP to mqttjs_4620a7e8
