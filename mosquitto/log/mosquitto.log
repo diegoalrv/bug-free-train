@@ -57,3 +57,9 @@
 1703040738: Sending PINGRESP to mqttjs_4620a7e8
 1703040798: Received PINGREQ from mqttjs_4620a7e8
 1703040798: Sending PINGRESP to mqttjs_4620a7e8
+1703040859: Received PINGREQ from mqttjs_4620a7e8
+1703040859: Sending PINGRESP to mqttjs_4620a7e8
+1703040919: Received PINGREQ from mqttjs_4620a7e8
+1703040919: Sending PINGRESP to mqttjs_4620a7e8
+1703040924: mosquitto version 2.0.18 terminating
+1703040924: Client mqttjs_4620a7e8 closed its connection.
