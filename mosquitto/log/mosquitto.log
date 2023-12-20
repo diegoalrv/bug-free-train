@@ -63,3 +63,9 @@
 1703040919: Sending PINGRESP to mqttjs_4620a7e8
 1703040924: mosquitto version 2.0.18 terminating
 1703040924: Client mqttjs_4620a7e8 closed its connection.
+1703097365: mosquitto version 2.0.18 starting
+1703097365: Config loaded from /mosquitto/config/mosquitto.conf.
+1703097365: Opening ipv4 listen socket on port 1883.
+1703097365: Opening ipv6 listen socket on port 1883.
+1703097365: Opening websockets listen socket on port 9001.
+1703097365: mosquitto version 2.0.18 running
