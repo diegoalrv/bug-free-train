@@ -13,4 +13,4 @@ def post_image():
     return {"message": "Image URL sent to MQTT broker."}
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port=5000)
