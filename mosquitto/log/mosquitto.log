@@ -415,3 +415,205 @@
 1704207314: Sending PINGRESP to mqttjs_d33319c5
 1704207345: Client mqttjs_d33319c5 closed its connection.
 1704208114: mosquitto version 2.0.18 terminating
+1704214688: mosquitto version 2.0.18 starting
+1704214688: Config loaded from /mosquitto/config/mosquitto.conf.
+1704214688: Opening ipv4 listen socket on port 1883.
+1704214688: Opening ipv6 listen socket on port 1883.
+1704214688: Opening websockets listen socket on port 9001.
+1704214688: mosquitto version 2.0.18 running
+1704214792: New client connected from ::ffff:172.19.0.1:55448 as mqttjs_a9b6736d (p2, c1, k60).
+1704214792: No will message specified.
+1704214792: Sending CONNACK to mqttjs_a9b6736d (0, 0)
+1704214792: Received SUBSCRIBE from mqttjs_a9b6736d
+1704214792: 	proyectores (QoS 0)
+1704214792: mqttjs_a9b6736d 0 proyectores
+1704214792: Sending SUBACK to mqttjs_a9b6736d
+1704214797: New connection from 172.19.0.3:50585 on port 1883.
+1704214797: New client connected from 172.19.0.3:50585 as auto-7E0D84BA-7B25-13F6-7702-54A73B90C789 (p2, c1, k60).
+1704214797: No will message specified.
+1704214797: Sending CONNACK to auto-7E0D84BA-7B25-13F6-7702-54A73B90C789 (0, 0)
+1704214797: Received PUBLISH from auto-7E0D84BA-7B25-13F6-7702-54A73B90C789 (d0, q0, r0, m0, 'proyectores', ... (115 bytes))
+1704214797: Sending PUBLISH to mqttjs_a9b6736d (d0, q0, r0, m0, 'proyectores', ... (115 bytes))
+1704214797: Received DISCONNECT from auto-7E0D84BA-7B25-13F6-7702-54A73B90C789
+1704214797: Client auto-7E0D84BA-7B25-13F6-7702-54A73B90C789 disconnected.
+1704214852: Received PINGREQ from mqttjs_a9b6736d
+1704214852: Sending PINGRESP to mqttjs_a9b6736d
+1704214912: Received PINGREQ from mqttjs_a9b6736d
+1704214912: Sending PINGRESP to mqttjs_a9b6736d
+1704214929: Client mqttjs_a9b6736d closed its connection.
+1704214929: New client connected from ::ffff:172.19.0.1:59984 as mqttjs_c669d718 (p2, c1, k60).
+1704214929: No will message specified.
+1704214929: Sending CONNACK to mqttjs_c669d718 (0, 0)
+1704214929: Received SUBSCRIBE from mqttjs_c669d718
+1704214929: 	proyectores (QoS 0)
+1704214929: mqttjs_c669d718 0 proyectores
+1704214929: Sending SUBACK to mqttjs_c669d718
+1704214989: Received PINGREQ from mqttjs_c669d718
+1704214989: Sending PINGRESP to mqttjs_c669d718
+1704215049: Received PINGREQ from mqttjs_c669d718
+1704215049: Sending PINGRESP to mqttjs_c669d718
+1704215109: Received PINGREQ from mqttjs_c669d718
+1704215109: Sending PINGRESP to mqttjs_c669d718
+1704215169: Received PINGREQ from mqttjs_c669d718
+1704215169: Sending PINGRESP to mqttjs_c669d718
+1704215218: New connection from 172.19.0.3:60569 on port 1883.
+1704215218: New client connected from 172.19.0.3:60569 as auto-D9B3B413-A1BB-D114-0EAF-D86AEDD27362 (p2, c1, k60).
+1704215218: No will message specified.
+1704215218: Sending CONNACK to auto-D9B3B413-A1BB-D114-0EAF-D86AEDD27362 (0, 0)
+1704215218: Received PUBLISH from auto-D9B3B413-A1BB-D114-0EAF-D86AEDD27362 (d0, q0, r0, m0, 'proyectores', ... (115 bytes))
+1704215218: Sending PUBLISH to mqttjs_c669d718 (d0, q0, r0, m0, 'proyectores', ... (115 bytes))
+1704215218: Received DISCONNECT from auto-D9B3B413-A1BB-D114-0EAF-D86AEDD27362
+1704215218: Client auto-D9B3B413-A1BB-D114-0EAF-D86AEDD27362 disconnected.
+1704215229: Received PINGREQ from mqttjs_c669d718
+1704215229: Sending PINGRESP to mqttjs_c669d718
+1704215289: Received PINGREQ from mqttjs_c669d718
+1704215289: Sending PINGRESP to mqttjs_c669d718
+1704215349: Received PINGREQ from mqttjs_c669d718
+1704215349: Sending PINGRESP to mqttjs_c669d718
+1704215409: Received PINGREQ from mqttjs_c669d718
+1704215409: Sending PINGRESP to mqttjs_c669d718
+1704215469: Received PINGREQ from mqttjs_c669d718
+1704215469: Sending PINGRESP to mqttjs_c669d718
+1704215529: Received PINGREQ from mqttjs_c669d718
+1704215529: Sending PINGRESP to mqttjs_c669d718
+1704215589: Received PINGREQ from mqttjs_c669d718
+1704215589: Sending PINGRESP to mqttjs_c669d718
+1704215649: Received PINGREQ from mqttjs_c669d718
+1704215649: Sending PINGRESP to mqttjs_c669d718
+1704215709: Received PINGREQ from mqttjs_c669d718
+1704215709: Sending PINGRESP to mqttjs_c669d718
+1704215769: Received PINGREQ from mqttjs_c669d718
+1704215769: Sending PINGRESP to mqttjs_c669d718
+1704215830: Received PINGREQ from mqttjs_c669d718
+1704215830: Sending PINGRESP to mqttjs_c669d718
+1704215890: Received PINGREQ from mqttjs_c669d718
+1704215890: Sending PINGRESP to mqttjs_c669d718
+1704215950: Received PINGREQ from mqttjs_c669d718
+1704215950: Sending PINGRESP to mqttjs_c669d718
+1704216010: Received PINGREQ from mqttjs_c669d718
+1704216010: Sending PINGRESP to mqttjs_c669d718
+1704216070: Received PINGREQ from mqttjs_c669d718
+1704216070: Sending PINGRESP to mqttjs_c669d718
+1704216130: Received PINGREQ from mqttjs_c669d718
+1704216130: Sending PINGRESP to mqttjs_c669d718
+1704216190: Received PINGREQ from mqttjs_c669d718
+1704216190: Sending PINGRESP to mqttjs_c669d718
+1704216250: Received PINGREQ from mqttjs_c669d718
+1704216250: Sending PINGRESP to mqttjs_c669d718
+1704216310: Received PINGREQ from mqttjs_c669d718
+1704216310: Sending PINGRESP to mqttjs_c669d718
+1704216370: Received PINGREQ from mqttjs_c669d718
+1704216370: Sending PINGRESP to mqttjs_c669d718
+1704216430: Received PINGREQ from mqttjs_c669d718
+1704216430: Sending PINGRESP to mqttjs_c669d718
+1704216490: Received PINGREQ from mqttjs_c669d718
+1704216490: Sending PINGRESP to mqttjs_c669d718
+1704216550: Received PINGREQ from mqttjs_c669d718
+1704216550: Sending PINGRESP to mqttjs_c669d718
+1704216610: Received PINGREQ from mqttjs_c669d718
+1704216610: Sending PINGRESP to mqttjs_c669d718
+1704216670: Received PINGREQ from mqttjs_c669d718
+1704216670: Sending PINGRESP to mqttjs_c669d718
+1704216730: Received PINGREQ from mqttjs_c669d718
+1704216730: Sending PINGRESP to mqttjs_c669d718
+1704216790: Received PINGREQ from mqttjs_c669d718
+1704216790: Sending PINGRESP to mqttjs_c669d718
+1704216850: Received PINGREQ from mqttjs_c669d718
+1704216850: Sending PINGRESP to mqttjs_c669d718
+1704216910: Received PINGREQ from mqttjs_c669d718
+1704216910: Sending PINGRESP to mqttjs_c669d718
+1704216963: Client mqttjs_c669d718 closed its connection.
+1704216963: New client connected from ::ffff:172.19.0.1:48400 as mqttjs_f174a832 (p2, c1, k60).
+1704216963: No will message specified.
+1704216963: Sending CONNACK to mqttjs_f174a832 (0, 0)
+1704216963: Received SUBSCRIBE from mqttjs_f174a832
+1704216963: 	proyectores (QoS 0)
+1704216963: mqttjs_f174a832 0 proyectores
+1704216963: Sending SUBACK to mqttjs_f174a832
+1704217023: Received PINGREQ from mqttjs_f174a832
+1704217023: Sending PINGRESP to mqttjs_f174a832
+1704217083: Received PINGREQ from mqttjs_f174a832
+1704217083: Sending PINGRESP to mqttjs_f174a832
+1704217143: Received PINGREQ from mqttjs_f174a832
+1704217143: Sending PINGRESP to mqttjs_f174a832
+1704217203: Received PINGREQ from mqttjs_f174a832
+1704217203: Sending PINGRESP to mqttjs_f174a832
+1704217263: Received PINGREQ from mqttjs_f174a832
+1704217263: Sending PINGRESP to mqttjs_f174a832
+1704217323: Received PINGREQ from mqttjs_f174a832
+1704217323: Sending PINGRESP to mqttjs_f174a832
+1704217383: Received PINGREQ from mqttjs_f174a832
+1704217383: Sending PINGRESP to mqttjs_f174a832
+1704217443: Received PINGREQ from mqttjs_f174a832
+1704217443: Sending PINGRESP to mqttjs_f174a832
+1704217503: Received PINGREQ from mqttjs_f174a832
+1704217503: Sending PINGRESP to mqttjs_f174a832
+1704217563: Received PINGREQ from mqttjs_f174a832
+1704217563: Sending PINGRESP to mqttjs_f174a832
+1704217623: Received PINGREQ from mqttjs_f174a832
+1704217623: Sending PINGRESP to mqttjs_f174a832
+1704217683: Received PINGREQ from mqttjs_f174a832
+1704217683: Sending PINGRESP to mqttjs_f174a832
+1704217743: Received PINGREQ from mqttjs_f174a832
+1704217743: Sending PINGRESP to mqttjs_f174a832
+1704217803: Received PINGREQ from mqttjs_f174a832
+1704217803: Sending PINGRESP to mqttjs_f174a832
+1704217863: Received PINGREQ from mqttjs_f174a832
+1704217863: Sending PINGRESP to mqttjs_f174a832
+1704217923: Received PINGREQ from mqttjs_f174a832
+1704217923: Sending PINGRESP to mqttjs_f174a832
+1704217983: Received PINGREQ from mqttjs_f174a832
+1704217983: Sending PINGRESP to mqttjs_f174a832
+1704218043: Received PINGREQ from mqttjs_f174a832
+1704218043: Sending PINGRESP to mqttjs_f174a832
+1704218103: Received PINGREQ from mqttjs_f174a832
+1704218103: Sending PINGRESP to mqttjs_f174a832
+1704218163: Received PINGREQ from mqttjs_f174a832
+1704218163: Sending PINGRESP to mqttjs_f174a832
+1704218223: Received PINGREQ from mqttjs_f174a832
+1704218223: Sending PINGRESP to mqttjs_f174a832
+1704218283: Received PINGREQ from mqttjs_f174a832
+1704218283: Sending PINGRESP to mqttjs_f174a832
+1704218344: Received PINGREQ from mqttjs_f174a832
+1704218344: Sending PINGRESP to mqttjs_f174a832
+1704218404: Received PINGREQ from mqttjs_f174a832
+1704218404: Sending PINGRESP to mqttjs_f174a832
+1704218464: Received PINGREQ from mqttjs_f174a832
+1704218464: Sending PINGRESP to mqttjs_f174a832
+1704218524: Received PINGREQ from mqttjs_f174a832
+1704218524: Sending PINGRESP to mqttjs_f174a832
+1704218584: Received PINGREQ from mqttjs_f174a832
+1704218584: Sending PINGRESP to mqttjs_f174a832
+1704218644: Received PINGREQ from mqttjs_f174a832
+1704218644: Sending PINGRESP to mqttjs_f174a832
+1704218704: Received PINGREQ from mqttjs_f174a832
+1704218704: Sending PINGRESP to mqttjs_f174a832
+1704218764: Received PINGREQ from mqttjs_f174a832
+1704218764: Sending PINGRESP to mqttjs_f174a832
+1704218824: Received PINGREQ from mqttjs_f174a832
+1704218824: Sending PINGRESP to mqttjs_f174a832
+1704218884: Received PINGREQ from mqttjs_f174a832
+1704218884: Sending PINGRESP to mqttjs_f174a832
+1704218944: Received PINGREQ from mqttjs_f174a832
+1704218944: Sending PINGRESP to mqttjs_f174a832
+1704219004: Received PINGREQ from mqttjs_f174a832
+1704219004: Sending PINGRESP to mqttjs_f174a832
+1704219064: Received PINGREQ from mqttjs_f174a832
+1704219064: Sending PINGRESP to mqttjs_f174a832
+1704219124: Received PINGREQ from mqttjs_f174a832
+1704219124: Sending PINGRESP to mqttjs_f174a832
+1704219184: Received PINGREQ from mqttjs_f174a832
+1704219184: Sending PINGRESP to mqttjs_f174a832
+1704219244: Received PINGREQ from mqttjs_f174a832
+1704219244: Sending PINGRESP to mqttjs_f174a832
+1704219304: Received PINGREQ from mqttjs_f174a832
+1704219304: Sending PINGRESP to mqttjs_f174a832
+1704219319: Client mqttjs_f174a832 closed its connection.
+1704219448: mosquitto version 2.0.18 terminating
+1704381963: mosquitto version 2.0.18 starting
+1704381963: Config loaded from /mosquitto/config/mosquitto.conf.
+1704381963: Opening ipv4 listen socket on port 1883.
+1704381963: Opening ipv6 listen socket on port 1883.
+1704381963: Opening websockets listen socket on port 9001.
+1704381963: mosquitto version 2.0.18 running
+1704390021: mosquitto version 2.0.18 terminating
