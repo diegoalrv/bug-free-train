@@ -617,3 +617,9 @@
 1704381963: Opening websockets listen socket on port 9001.
 1704381963: mosquitto version 2.0.18 running
 1704390021: mosquitto version 2.0.18 terminating
+1704390913: mosquitto version 2.0.18 starting
+1704390913: Config loaded from /mosquitto/config/mosquitto.conf.
+1704390913: Opening ipv4 listen socket on port 1883.
+1704390913: Opening ipv6 listen socket on port 1883.
+1704390913: Opening websockets listen socket on port 9001.
+1704390913: mosquitto version 2.0.18 running
