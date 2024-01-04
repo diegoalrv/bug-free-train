@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, Body
+from fastapi.middleware.cors import CORSMiddleware
 
 import os
 import paho.mqtt.publish as publish
@@ -6,6 +7,14 @@ import paho.mqtt.publish as publish
 app = FastAPI()
 mqtt_broker = os.getenv('MQTT_BROKER', 'localhost')
 mqtt_port = int(os.getenv('MQTT_PORT', 1883))
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # o especifica los dominios permitidos
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post('/post-image')
 async def post_image(url: str = Body(...)):
