@@ -12,6 +12,7 @@
     </style>
     <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
     <script type="module" src="script.js"></script>
+
 </head>
 <body>
 
@@ -29,41 +30,44 @@
     // Escala inicial
     let escalaX = 2;
     let escalaY = 2;
-
+    // Accede al elemento por su ID
+    var keystoneContainer = document.getElementById('keystoneContainer');
     function renderImagen(image_url) {
         if ($imagen) {
             $imagen.setAttribute('src', image_url);
             // Aplicar escala en ambos ejes (horizontal y vertical)
             $imagen.style.transform = `scale(${escalaX}, ${escalaY})`;
+            console.log(`Tamaño de la escala: (${escalaX}, ${escalaY})`);
+            console.log("Posicion: ", keystoneContainer.style.transform);
         } else {
             console.error('Elemento imagen no encontrado');
         }
     }
 
-    function checkUpdate() {
-        fetch('http://localhost:9001/check_changes')
-        .then(response => response.json())
-        .then(data => {
-            if (data.changes_occurred) {
-                updateImage();
-            }
-        })
-        .catch(error => console.error('Error al verificar actualización:', error));
-    }
+    // function checkUpdate() {
+    //     fetch('http://localhost:9001/check_changes')
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         if (data.changes_occurred) {
+    //             updateImage();
+    //         }
+    //     })
+    //     .catch(error => console.error('Error al verificar actualización:', error));
+    // }
 
-    function updateImage() {
-        fetch('http://localhost:9001/get_new_image')
-        .then(response => response.json())
-        .then(data => {
-            const timestamp = Date.now();
-            const imageUrlWithTimestamp = `${data.image_url}?timestamp=${timestamp}`;
-            renderImagen(imageUrlWithTimestamp);
-            checkUpdate();
-        })
-        .catch(error => console.error('Error al obtener imagen actualizada:', error));
-    }
+    // function updateImage() {
+    //     fetch('http://localhost:9001/get_new_image')
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         const timestamp = Date.now();
+    //         const imageUrlWithTimestamp = `${data.image_url}?timestamp=${timestamp}`;
+    //         renderImagen(imageUrlWithTimestamp);
+    //         checkUpdate();
+    //     })
+    //     .catch(error => console.error('Error al obtener imagen actualizada:', error));
+    // }
 
-    setInterval(checkUpdate, 1000);
+    // setInterval(checkUpdate, 1000);
 
     window.addEventListener('keydown', function (event) {
         switch (event.key) {
@@ -92,6 +96,5 @@
     });
 
 </script>
-
 </body>
 </html>
