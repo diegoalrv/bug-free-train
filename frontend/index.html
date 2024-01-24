@@ -27,11 +27,12 @@
     const $imagen = document.getElementById('displayedImage');
     Maptastic('keystoneContainer');
 
-    // Escala inicial
-    let escalaX = 2;
-    let escalaY = 2;
+    // Escala inicial Tamaño de la escala: (7.099999999999991, 14.199999999999966)2628, 1154
+    let escalaX = 7.099999999999991;
+    let escalaY = 14.199999999999966;
     // Accede al elemento por su ID
     var keystoneContainer = document.getElementById('keystoneContainer');
+    // keystoneContainer.style.transform = `matrix3d(-0.0511682, -1.01624, 0, -1.94e-05, 1.0287, 0.0112344, 0, 9.7e-06, 0, 0, 1, 0, 2628, 1154, 0, 1)`;
     function renderImagen(image_url) {
         if ($imagen) {
             $imagen.setAttribute('src', image_url);
@@ -90,6 +91,12 @@
                 // Disminuir la escala solo hacia abajo
                 escalaY -= 0.1;
                 renderImagen($imagen.src);
+                break;
+            case 'u':
+                let escalaX = 7.099999999999991;
+                let escalaY = 14.199999999999966;
+                keystoneContainer.style.transform = `matrix3d(-0.0511682, -1.01624, 0, -1.94e-05, 1.0287, 0.0112344, 0, 9.7e-06, 0, 0, 1, 0, 2628, 1154, 0, 1)`;
+                renderImagen($imagen.src)
                 break;
             // Otros casos para manejar otras teclas si es necesario
         }
