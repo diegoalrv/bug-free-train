@@ -28,6 +28,8 @@ services:
       - "80:80"
     networks:
       - clbb
+    volumes:
+      - ./frontend:/frontend
 
 networks:
   clbb:
