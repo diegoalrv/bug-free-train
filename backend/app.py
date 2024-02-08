@@ -8,6 +8,9 @@ import shutil
 import paho.mqtt.publish as publish
 
 app = FastAPI()
+
+app.mount("/static", StaticFiles(directory="static"), name = "static")
+
 mqtt_broker = os.getenv('MQTT_BROKER', 'localhost')
 mqtt_port = int(os.getenv('MQTT_PORT', 1883))
 
@@ -29,13 +32,6 @@ async def post_image(request_data: dict):
     publish.single("proyectores", url, hostname=mqtt_broker, port=mqtt_port)
     return {"message": f"Image URL sent to MQTT broker. \nurl = {url}"}
 
-
-# @app.get("/hola")
-# async def get_hola():
-#     return {"hola": "hola"}
-
-app.mount("/static", StaticFiles(directory="static"), name = "static")
-
 @app.get('/hola2/{nombregif}')
 async def hola2(nombregif: str):
     address = 'localhost'
@@ -44,10 +40,13 @@ async def hola2(nombregif: str):
     publish.single("proyectores", url, hostname=mqtt_broker, port=mqtt_port)
     return {"message": f"Image URL sent to MQTT broker. \nurl = {url}"}
 
-# @app.get("/items/{item_id}")
-# async def read_item(item_id: int):
-#     return {"item_id": item_id}
-
+@app.get('/mount/{static_value}')
+async def hola2(static_value: str):
+    address = 'localhost'
+    url = f'http://{address}:5000/static/{static_value}'
+    print(url)
+    publish.single("proyectores", url, hostname=mqtt_broker, port=mqtt_port)
+    return {"message": f"Image URL sent to MQTT broker. \nurl = {url}"}
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
