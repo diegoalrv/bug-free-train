@@ -23,6 +23,7 @@ client.on('connect', function () {
     });
 });
 
+// convierte el src de la imagen principal en lo que se envio por mensaje parece xd
 client.on('message', function (topic, message) {
     // message es un Buffer
     console.log(message.toString());

@@ -9,6 +9,13 @@
         #image{
             transform-origin: center;
         }
+        .img2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+
     </style>
     <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
     <script type="module" src="script.js"></script>
@@ -17,7 +24,9 @@
 <body>
 
 <div id="keystoneContainer" class="keystoneContainer">
-    <img id="displayedImage" src="https://i.postimg.cc/5NTtK0fL/Gilla-con-imagen.png" height="100%" width="100%" alt="Waiting for image...">
+    <!-- <img id="displayedImage" src="https://i.postimg.cc/5NTtK0fL/Gilla-con-imagen.png" height="100%" width="100%" alt="Waiting for image..."> -->
+    <img id="displayedImage" src="https://i.postimg.cc/ncfvxvpQ/wp2754860.jpg" height="100%" width="100%" alt="Waiting for image...">
+    <img class="img2" id="img2" src="https://i.postimg.cc/bvQcvZJJ/docker.png" height="100%" width="100%" alt="image 2" >
 </div>
 
 <script src="maptastic.js"></script>
@@ -25,6 +34,7 @@
 
 <script>
     const $imagen = document.getElementById('displayedImage');
+    const $imagen2 = document.getElementById('img2');
     Maptastic('keystoneContainer');
 
     // Escala inicial Tamaño de la escala: 
@@ -37,8 +47,9 @@
 
 
     function renderImagen(image_url) {
+        // for image 1
         if ($imagen) {
-            $imagen.setAttribute('src', image_url);
+            $imagen.setAttribute('src', image_url); //aqui se cambia el src de la imagen1
             // Aplicar escala en ambos ejes (horizontal y vertical)
             $imagen.style.transform = `scale(${escalaX}, ${escalaY})`;
             console.log(`Tamaño de la escala: (${escalaX}, ${escalaY})`);
@@ -48,22 +59,35 @@
         }
     }
 
+    function renderImagen2(){
+        if($imagen2){
+            $imagen2.style.transform = `scale(${escalaX}, ${escalaY})`;
+        }
+        else{
+            console.error('imagen2 no existe')
+        }
+    }
+
     window.addEventListener('keydown', function (event) {
         switch (event.key) {
             case 'd':
                 // Aumentar la escala solo hacia la derecha
                 escalaX += 0.1;
                 renderImagen($imagen.src);
+                renderImagen2();
                 break;
             case 'a':
                 // Disminuir la escala solo hacia la izquierda
                 escalaX -= 0.1;
                 renderImagen($imagen.src);
+                renderImagen2();
                 break;
             case 'w':
                 // Aumentar la escala solo hacia arriba
                 escalaY += 0.1;
                 renderImagen($imagen.src);
+                renderImagen2();
+
                 break;
             case 's':
                 // Disminuir la escala solo hacia abajo
@@ -84,8 +108,10 @@
                 //keystoneContainer.style.transform = `matrix3d(0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 407, 1154, 0, 1)`;
                 //keystoneContainer.style.transform = `matrix3d(0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1341, 882, 0, 1)`;
                 keystoneContainer.style.transform = `matrix3d(-0.0149338, -1.02373, 0, -1.94e-05, 1.01058, 0.0149824, 0, 9.7e-06, 0, 0, 1, 0, 767, 1539, 0, 1)`
-                renderImagen($imagen.src)
+                renderImagen($imagen.src);
+                renderImagen2();
                 break;
+                
             
             // Otros casos para manejar otras teclas si es necesario
         }

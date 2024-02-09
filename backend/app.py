@@ -48,5 +48,14 @@ async def hola2(static_value: str):
     publish.single("proyectores", url, hostname=mqtt_broker, port=mqtt_port)
     return {"message": f"Image URL sent to MQTT broker. \nurl = {url}"}
 
+
+@app.get('/send_cap/{static_value}')
+async def send_cap(static_value: str):
+    address = 'localhost'
+    url = f'http://{address}:5000/static/{static_value}'
+    publish.single("capa", url, hostname=mqtt_broker, port=mqtt_port)
+
+    return {"message": f"Cap send"}
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
