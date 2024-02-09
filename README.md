@@ -8,6 +8,8 @@ Api for projecting images (maps) and displaying them on a TUI
 - ``losthost:5000 Api Fastapi (contains endopoints) ``
 - ``losthost:9001 Server MQTT ``
 
+
+
 # Quick start
 
 1. Clone repository
