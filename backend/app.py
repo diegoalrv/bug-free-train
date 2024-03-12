@@ -33,7 +33,7 @@ async def post_image(request_data: dict):
     return {"message": f"Image URL sent to MQTT broker. \nurl = {url}"}
 
 @app.get('/hola2/{nombregif}')
-async def hola2(nombregif: str):
+async def hola(nombregif: str):
     address = 'localhost'
     url = f'http://{address}:5000/static/{nombregif}.gif'
     print(url)
@@ -53,9 +53,11 @@ async def hola2(static_value: str):
 async def send_cap(static_value: str):
     address = 'localhost'
     url = f'http://{address}:5000/static/{static_value}'
-    publish.single("capa", url, hostname=mqtt_broker, port=mqtt_port)
-
-    return {"message": f"Cap send"}
+    if url:
+        publish.single("capa", url, hostname=mqtt_broker, port=mqtt_port)
+        return {"message": f"Cap send with URL: {url}"}
+    else:
+        return {"message": "URL not provided for cap"}
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

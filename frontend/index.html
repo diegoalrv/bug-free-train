@@ -26,7 +26,7 @@
 <div id="keystoneContainer" class="keystoneContainer">
     <!-- <img id="displayedImage" src="https://i.postimg.cc/5NTtK0fL/Gilla-con-imagen.png" height="100%" width="100%" alt="Waiting for image..."> -->
     <img id="displayedImage" src="https://i.postimg.cc/ncfvxvpQ/wp2754860.jpg" height="100%" width="100%" alt="Waiting for image...">
-    <img class="img2" id="img2" src="https://i.postimg.cc/bvQcvZJJ/docker.png" height="100%" width="100%" alt="image 2" >
+    <img class="img2" id="img2" src="https://i.postimg.cc/8kBqjmbw/trans.png" height="100%" width="100%">
 </div>
 
 <script src="maptastic.js"></script>
@@ -61,7 +61,7 @@
 
     function renderImagen2(image_url){
         if($imagen2){
-            $imagen2.setAttribute('src', image_url)
+            $imagen2.setAttribute('src', image_url);
             $imagen2.style.transform = `scale(${escalaX}, ${escalaY})`;
         }
         else{
